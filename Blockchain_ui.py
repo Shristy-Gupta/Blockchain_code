@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun  3 20:27:23 2021
-@author: shris
+@author: shristy Gupta
 """
 
 # Module 1 --> Create BlockChain
@@ -76,7 +76,7 @@ def mine_block():
     new_proof=blockchain.proof_of_work(previous_proof)
     previous_hash=blockchain.hash(previous_block)
     new_created_block=blockchain.create_block(new_proof, previous_hash)
-    response = {'message':'COngratulate miner you just mined a block!',
+    response = {'message':'Congratulate miner you just mined a block!',
                 'index':new_created_block['index'],
                 'timestamp':new_created_block['timestamp'],
                 'proof':new_created_block['proof'],
