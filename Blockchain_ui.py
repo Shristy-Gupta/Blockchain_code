@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun  3 20:27:23 2021
-
 @author: shris
 """
 
@@ -49,7 +48,7 @@ class Blockchain:
         block_index=1
         while block_index<len(chain):
             current_block=chain[block_index]
-            if current_block['previous_hash']!=previous_block['proof']:
+            if current_block['previous_hash']!=self.hash(previous_block):
                 return False
             previous_proof=previous_block['proof']
             current_proof=current_block['proof']
@@ -103,4 +102,3 @@ def is_valid():
 
 # 0.0.0.0 makes the host available to anyone
 app.run(host='0.0.0.0', port=5000)
-       
