@@ -21,4 +21,5 @@ get_chain: Returns the all the blocks attached to a perticular node
 
 is_valid: If the current mined block is valid!
   
-  [image](https://user-images.githubusercontent.com/26459890/122520419-32409400-d031-11eb-9a3c-dc1ef28bf094.png)
+![image](https://user-images.githubusercontent.com/26459890/122521703-c4956780-d032-11eb-868a-9ba754772ed1.png)
+
